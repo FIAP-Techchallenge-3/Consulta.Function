@@ -24,7 +24,7 @@ namespace Consulta.Function
 			using IDbConnection conexao = _banco.ObtenhaConexao();
 
 			var contatos = await conexao.QueryAsync<Contato>(
-				"SELECT Id, Nome, Ddd, Telefone, Email FROM Contatos"
+				"SELECT Nome, Ddd, Telefone, Email FROM Contatos"
 			);
 
 			var resposta = req.CreateResponse(System.Net.HttpStatusCode.OK);

@@ -2,7 +2,7 @@
   "profiles": {
     "Consulta.Function": {
       "commandName": "Project",
-      "commandLineArgs": "--port 7111",
+      "commandLineArgs": "--port 7071",
       "launchBrowser": false
     }
   }
